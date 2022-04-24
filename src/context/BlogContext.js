@@ -31,7 +31,6 @@ const getBlogPosts = (dispatch) => {
     const response = await jsonServer.get('/blogposts');
 
     dispatch({ type: 'get_blogposts', payload: response.data });
-    console.log(response.data);
   };
 };
 
